@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="26"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_weight="16"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemetaan Warung Tipat Cantok di Desa Jasri Karangasem"
+            android:layout_alignParentBottom="true"
+            android:background="#90ebae"
+            android:textColor="#0c0c0c"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:id="@+id/iv_map"
+            android:src="@drawable/mapp"
+            android:layout_marginRight="70dp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/listt"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

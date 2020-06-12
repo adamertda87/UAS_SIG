@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgss"
+    tools:context=".DetailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/nama_warung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:hint="Nama Warung" />
+
+
+            <ImageView
+                android:layout_below="@id/nama_warung"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:id="@+id/gambar_warung" />
+
+            <TextView
+                android:layout_below="@id/gambar_warung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                android:ems="10"
+                android:paddingTop="10dp"
+                android:text="Buka :"
+                android:id="@+id/jambuka" />
+
+            <TextView
+                android:layout_below="@id/jambuka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Jam Buka"
+                android:id="@+id/jam_buka" />
+
+            <Button
+                android:layout_below="@id/jam_buka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:paddingBottom="5dp"
+                android:text="Telepon"
+                android:id="@+id/btn_call" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
